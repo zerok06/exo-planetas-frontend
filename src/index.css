@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Essential styles only */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+  color: white;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Only essential custom classes */
+.space-card {
+  background-color: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.planet-confirmed {
+  color: #4ade80;
+}
+
+.planet-candidate {
+  color: #fbbf24;
+}
+
+.planet-selected {
+  color: #3b82f6;
+}

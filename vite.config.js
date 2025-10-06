@@ -7,5 +7,7 @@ export default defineConfig({
   server: {
     port: process.env.PORT || 4000,
     host: '0.0.0.0' // Permite conexiones desde cualquier dirección IP
+  }, preview: {
+    allowedHosts: ['exo-planetas-frontend.onrender.com']
   }
 })
